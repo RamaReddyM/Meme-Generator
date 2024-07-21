@@ -1,0 +1,106 @@
+/* Global reset and basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+/* Header styles */
+.logo-title {
+    padding: 8px;
+    margin: 4px 0;
+    display: inline-block;
+    color: #abbb32; /* Greenish yellow */
+    font-size: 26px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: #ffc0cb; /* Light pink */
+    border: 2px solid #080810; /* Dark blue */
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.logo-title:hover {
+    color: #12b348; /* Dark green */
+    background-color: #ffff66; /* Yellow */
+    text-shadow: 0 0 3px #222; /* Dark gray shadow */
+}
+
+/* Font Awesome icons */
+.fa-solid {
+    color: #c01a1a; /* Red */
+}
+
+.fa-regular {
+    color: orange; /* Orange */
+}
+
+/* Meme Generator container */
+.meme-generator {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center; /* Center align content */
+}
+
+.meme-generator img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.meme-generator .generate-meme-btn {
+    padding: 14px 28px;
+    border: 2px solid #4a90e2; /* Blue border */
+    background-color: #4a90e2; /* Blue background */
+    color: #ffffff; /* White text */
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    display: inline-block; /* Ensure inline-block to center properly */
+}
+
+.meme-generator .generate-meme-btn:hover {
+    background-color: #357ebd; /* Darker blue on hover */
+    border-color: #357ebd; /* Darker blue border on hover */
+}
+
+.meme-generator .generate-meme-btn:focus {
+    outline: none; /* Remove focus outline */
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.4); /* Light blue focus shadow */
+}
+
+.meme-generator .generate-meme-btn:active {
+    transform: translateY(1px); /* Add slight press down effect */
+}
+
+.meme-generator .meme-author {
+    margin-top: 20px;
+    font-style: italic;
+    color: #666; /* Dark gray */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .meme-generator {
+        padding: 10px;
+    }
+    
+    .meme-generator .generate-meme-btn {
+        font-size: 18px;
+    }
+}
